@@ -9,7 +9,4 @@
 #import <Cocoa/Cocoa.h>
 
 @interface MKIAppDelegate : NSObject <NSApplicationDelegate>
-
-@property (assign) IBOutlet NSWindow *window;
-
 @end

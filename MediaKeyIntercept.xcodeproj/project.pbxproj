@@ -10,7 +10,6 @@
 		9558723B1832A9F300EA4659 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9558723A1832A9F300EA4659 /* Cocoa.framework */; };
 		955872451832A9F300EA4659 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 955872431832A9F300EA4659 /* InfoPlist.strings */; };
 		955872471832A9F300EA4659 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 955872461832A9F300EA4659 /* main.m */; };
-		9558724B1832A9F300EA4659 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 955872491832A9F300EA4659 /* Credits.rtf */; };
 		9558724E1832A9F300EA4659 /* MKIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9558724D1832A9F300EA4659 /* MKIAppDelegate.m */; };
 		955872511832A9F300EA4659 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9558724F1832A9F300EA4659 /* MainMenu.xib */; };
 		955872531832A9F300EA4659 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 955872521832A9F300EA4659 /* Images.xcassets */; };
@@ -40,7 +39,6 @@
 		955872441832A9F300EA4659 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		955872461832A9F300EA4659 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		955872481832A9F300EA4659 /* MediaKeyIntercept-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MediaKeyIntercept-Prefix.pch"; sourceTree = "<group>"; };
-		9558724A1832A9F300EA4659 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		9558724C1832A9F300EA4659 /* MKIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKIAppDelegate.h; sourceTree = "<group>"; };
 		9558724D1832A9F300EA4659 /* MKIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKIAppDelegate.m; sourceTree = "<group>"; };
 		955872501832A9F300EA4659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -131,7 +129,6 @@
 				955872431832A9F300EA4659 /* InfoPlist.strings */,
 				955872461832A9F300EA4659 /* main.m */,
 				955872481832A9F300EA4659 /* MediaKeyIntercept-Prefix.pch */,
-				955872491832A9F300EA4659 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -233,7 +230,6 @@
 			files = (
 				955872451832A9F300EA4659 /* InfoPlist.strings in Resources */,
 				955872531832A9F300EA4659 /* Images.xcassets in Resources */,
-				9558724B1832A9F300EA4659 /* Credits.rtf in Resources */,
 				955872511832A9F300EA4659 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,14 +279,6 @@
 				955872441832A9F300EA4659 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		955872491832A9F300EA4659 /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9558724A1832A9F300EA4659 /* en */,
-			);
-			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
 		9558724F1832A9F300EA4659 /* MainMenu.xib */ = {
@@ -343,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -375,7 +363,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -388,6 +376,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MediaKeyIntercept/MediaKeyIntercept-Prefix.pch";
 				INFOPLIST_FILE = "MediaKeyIntercept/MediaKeyIntercept-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -401,6 +390,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MediaKeyIntercept/MediaKeyIntercept-Prefix.pch";
 				INFOPLIST_FILE = "MediaKeyIntercept/MediaKeyIntercept-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -465,6 +455,7 @@
 				9558726A1832A9F300EA4659 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9558726B1832A9F300EA4659 /* Build configuration list for PBXNativeTarget "MediaKeyInterceptTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +464,7 @@
 				9558726D1832A9F300EA4659 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
