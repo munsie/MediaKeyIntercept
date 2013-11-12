@@ -11,7 +11,6 @@
 		955872451832A9F300EA4659 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 955872431832A9F300EA4659 /* InfoPlist.strings */; };
 		955872471832A9F300EA4659 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 955872461832A9F300EA4659 /* main.m */; };
 		9558724E1832A9F300EA4659 /* MKIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9558724D1832A9F300EA4659 /* MKIAppDelegate.m */; };
-		955872511832A9F300EA4659 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9558724F1832A9F300EA4659 /* MainMenu.xib */; };
 		955872531832A9F300EA4659 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 955872521832A9F300EA4659 /* Images.xcassets */; };
 		9558725A1832A9F300EA4659 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955872591832A9F300EA4659 /* XCTest.framework */; };
 		9558725B1832A9F300EA4659 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9558723A1832A9F300EA4659 /* Cocoa.framework */; };
@@ -41,7 +40,6 @@
 		955872481832A9F300EA4659 /* MediaKeyIntercept-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MediaKeyIntercept-Prefix.pch"; sourceTree = "<group>"; };
 		9558724C1832A9F300EA4659 /* MKIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKIAppDelegate.h; sourceTree = "<group>"; };
 		9558724D1832A9F300EA4659 /* MKIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKIAppDelegate.m; sourceTree = "<group>"; };
-		955872501832A9F300EA4659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		955872521832A9F300EA4659 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		955872581832A9F300EA4659 /* MediaKeyInterceptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaKeyInterceptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		955872591832A9F300EA4659 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -115,7 +113,6 @@
 			children = (
 				9558724C1832A9F300EA4659 /* MKIAppDelegate.h */,
 				9558724D1832A9F300EA4659 /* MKIAppDelegate.m */,
-				9558724F1832A9F300EA4659 /* MainMenu.xib */,
 				955872521832A9F300EA4659 /* Images.xcassets */,
 				955872411832A9F300EA4659 /* Supporting Files */,
 			);
@@ -230,7 +227,6 @@
 			files = (
 				955872451832A9F300EA4659 /* InfoPlist.strings in Resources */,
 				955872531832A9F300EA4659 /* Images.xcassets in Resources */,
-				955872511832A9F300EA4659 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,14 +275,6 @@
 				955872441832A9F300EA4659 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9558724F1832A9F300EA4659 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				955872501832A9F300EA4659 /* Base */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 		955872611832A9F300EA4659 /* InfoPlist.strings */ = {

@@ -7,8 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MKIAppDelegate.h"
 
-int main(int argc, const char * argv[])
-{
-  return NSApplicationMain(argc, argv);
+int main(int argc, const char * argv[]) {
+  MKIAppDelegate *delegate = [[MKIAppDelegate alloc] init];
+  [[NSApplication sharedApplication] setDelegate:delegate];
+  [[NSApplication sharedApplication] run];
 }
