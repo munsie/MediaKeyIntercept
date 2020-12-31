@@ -67,9 +67,7 @@ static CGEventRef tapEventCallback(CGEventTapProxy proxy, CGEventType type, CGEv
   [self saveDefaults];
 }
 
-#pragma mark -
-#pragma mark Defaults
-
+#pragma mark - Defaults
 -(void)restoreDefaults {
   _disablePlay = [[[NSUserDefaults standardUserDefaults] objectForKey:DEFAULT_DISABLE_PLAY_KEY] boolValue];
   _disablePrevious = [[[NSUserDefaults standardUserDefaults] objectForKey:DEFAULT_DISABLE_PREVIOUS_KEY] boolValue];
@@ -90,9 +88,7 @@ static CGEventRef tapEventCallback(CGEventTapProxy proxy, CGEventType type, CGEv
   [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:_disableEject] forKey:DEFAULT_DISABLE_EJECT_KEY];
 }
 
-#pragma mark -
-#pragma mark Status Item Menu
-
+#pragma mark - Status Item Menu
 -(void)setupStatusItemMenu {
   _statusMenu = [[NSMenu alloc] initWithTitle:@""];
   _statusMenu.delegate = self;
@@ -209,9 +205,7 @@ static CGEventRef tapEventCallback(CGEventTapProxy proxy, CGEventType type, CGEv
                                          NSLocalizedString(@"Disable Eject Key", nil);
 }
 
-#pragma mark -
-#pragma mark Media Key Handler
-
+#pragma mark - Media Key Handler
 -(void)startWatchingMediaKeys {
   _eventPort = CGEventTapCreate(kCGSessionEventTap,
                                 kCGHeadInsertEventTap,
