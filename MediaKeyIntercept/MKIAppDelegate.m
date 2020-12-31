@@ -121,9 +121,8 @@ static CGEventRef tapEventCallback(CGEventTapProxy proxy, CGEventType type, CGEv
   
   // setup the NSStatusItem
   _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
-  _statusItem.highlightMode = YES;
-  _statusItem.title = @"🎶";
-  [_statusItem setEnabled:YES];
+  _statusItem.button.image = [NSImage imageWithSystemSymbolName:@"music.quarternote.3" accessibilityDescription:NSLocalizedString(@"MediaKeyIntercept", nil)];
+  [_statusItem.button setEnabled:YES];
   [_statusItem setMenu:_statusMenu];
   
   [self updateMenuItemNames];
@@ -166,7 +165,7 @@ static CGEventRef tapEventCallback(CGEventTapProxy proxy, CGEventType type, CGEv
 
 -(void)menuWillOpen:(NSMenu *)menu {
   [_statusMenu removeAllItems];
-  if([NSEvent modifierFlags] & NSAlternateKeyMask) {
+  if([NSEvent modifierFlags] & NSEventModifierFlagOption) {
     [_statusMenu addItem:_nameMenuItem];
     [_statusMenu addItem:_versionMenuItem];
     [_statusMenu addItem:[NSMenuItem separatorItem]];
